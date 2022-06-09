@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Social 3D</title>
+    <script src="https://kit.fontawesome.com/af1c32d543.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <secction class="socialMedia">
+        <ul class="sci">
+            <li data="Facebook" color="#1877f2">
+                <a href="#" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li data="YouTube" color="#ff0000">
+                <a href="#" class="youtube"><i class="fa-brands fa-youtube"></i></a>
+            </li>
+            <li data="Twitter" color="#0099ff">
+                <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li data="Instagram" color="#e4405f">
+                <a href="#"class="instagram" ><i class="fa-brands fa-instagram"></i></a>
+            </li>
+        </ul>
+        <script>
+            let list = document.querySelectorAll('.sci li');
+            let bg = document.querySelector('.socialMedia');
+            list.forEach(elements => {
+                elements.addEventListener('mouseenter', function
+                (event){
+                    let colores = event.target.getAttribute
+                    ('color');
+                    bg.style.backgroundColor = colores
+                })
+                elements.addEventListener('mouseleave', function
+                (event){
+                    bg.style.backgroundColor = '#fff';
+                })
+            })
+        </script>
+    </secction>
+</body>
+</html>
