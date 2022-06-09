@@ -24,7 +24,16 @@
                 <a href="#"class="instagram" ><i class="fa-brands fa-instagram"></i></a>
             </li>
         </ul>
+    </secction>
+    <script src="js/vanilla-tilt.min.js"></script>
         <script>
+            VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+		max: 30,
+		speed: 400,
+        glare: true,
+        "max-glare": 1,
+
+	        });
             let list = document.querySelectorAll('.sci li');
             let bg = document.querySelector('.socialMedia');
             list.forEach(elements => {
@@ -40,6 +49,6 @@
                 })
             })
         </script>
-    </secction>
+    
 </body>
 </html>

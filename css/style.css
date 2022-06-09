@@ -61,6 +61,9 @@
     box-shadow: 0 25px 35px rgba(0, 0, 0, 0.1);
     transition: background 0.25s;
 }
+.js-tilt-glare{
+    border-radius: 10px;
+}
 .sci li a:hover.facebook
 {
     background: #1877f2;
@@ -85,4 +88,5 @@
 .sci li a:hover .fa-brands
 {
     color: #fff;
+    transform: scale(1.75) translateZ(50px);
 }
